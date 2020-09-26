@@ -6,18 +6,33 @@
     <title>Pincel Art Santoya</title>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <header>
+    <header id="inicio">
+        <div class="menu">
+            <a href="" class="bt-menu"> <span class="glyphicon glyphicon-align-justify"></span>Menu</a>
+        </div>
         <div class="navegacion">
             <p>Pincel Arte Satoya</p>
             <ul>
-                <li><a href="">Inicio</a></li>
-                <li> <a href="">Acerca de</a></li>
-                <li> <a href="">Portafolio</a></li>
-                <li> <a href="">Contacto</a></li>
+                <li>
+                    <a href="#inicio">Inicio</a>
+                </li>
+                <li>
+                    <a href="#nosotros">Acerca de</a>
+                </li>
+                <li>
+                    <a href="#obras">Portafolio</a>
+                </li>
+                <li>
+                    <a href="#opiniones">Clientes</a>
+                </li>
+                <li>
+                    <a href="#contacto">Contacto</a>
+                </li>
             </ul>
         </div>
         <section class="text">
@@ -26,7 +41,7 @@
     </header>
 
     <main>
-        <section class="about">
+        <section id="nosotros" class="about">
 
             <div class=" contenedor ">
                 <h2 class="titulo">Algo sobre mi</h2>
@@ -48,7 +63,7 @@
 
         </section>
 
-        <section class="obras">
+        <section id="obras">
             <div class="contenedor">
                 <h2 class="titulo">Galería</h2>
                 <div class="galeria">
@@ -82,34 +97,48 @@
         </section>
 
 
-        <div class="contenedor">
-            <h2 class="titulo">Que opinan nuestros clientes</h2>
-            <div class="foto-clientes">
-                <div class="clientes">
-                    <img src="img/Pantene_ProAdvice_PanteneInstitute_cortes_de_pelo_AR.jpg" alt="Foto">
-                    <div class="textos-clientes">
-                        <h4>Name</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta dolorum odit minus nemo vitae, eius tempore! Nobis error quae, quod soluta atque veritatis autem id corrupti optio quasi provident quos!</p>
+        <section id="opiniones">
+            <div class="contenedor">
+                <h2 class="titulo">Que opinan nuestros clientes</h2>
+                <div class="foto-clientes">
+                    <div class="clientes">
+                        <img src="img/Pantene_ProAdvice_PanteneInstitute_cortes_de_pelo_AR.jpg" alt="Foto">
+                        <div class="textos-clientes">
+                            <h4>Name</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta dolorum odit minus nemo vitae, eius tempore! Nobis error quae, quod soluta atque veritatis autem id corrupti optio quasi provident quos!</p>
+                        </div>
+                    </div>
+                    <div class="clientes">
+                        <img src="img/Pantene_ProAdvice_PanteneInstitute_cortes_de_pelo_AR.jpg" alt="Foto">
+                        <div class="textos-clientes">
+                            <h4>Name</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta dolorum odit minus nemo vitae, eius tempore! Nobis error quae, quod soluta atque veritatis autem id corrupti optio quasi provident quos!</p>
+                        </div>
                     </div>
                 </div>
-                <div class="clientes">
-                    <img src="img/Pantene_ProAdvice_PanteneInstitute_cortes_de_pelo_AR.jpg" alt="Foto">
-                    <div class="textos-clientes">
-                        <h4>Name</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta dolorum odit minus nemo vitae, eius tempore! Nobis error quae, quod soluta atque veritatis autem id corrupti optio quasi provident quos!</p>
-                    </div>
-                </div>
-            </div>
+        </section>
 
     </main>
 
 
 
-    <footer>
+    <footer id="contacto">
         <h4 class="title">Mis datos</h4>
         <p>Oscar Santoya Montero</p>
         <p>Celular: +1 (832) 988-5061</p>
         <p>Correo electrónico: oscarmontero19721@gmail.com</p>
     </footer>
+
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
 
 </body>
