@@ -7,7 +7,7 @@
 
 .contenedor {
     padding: 60px 0;
-    width: 100%;
+    width: 90%;
     max-width: 1000px;
     margin: auto;
 }
@@ -116,6 +116,14 @@ header p:hover {
 
 .oscar-tex p {
     margin-bottom: 30px;
+}
+
+.oscar-tex p:first-child {
+    margin-top: 50px;
+}
+
+.oscar-tex p:last-child {
+    margin-bottom: 50px;
 }
 
 
@@ -227,13 +235,18 @@ footer {
     }
     .foto-oscar {
         width: 95%;
-        margin-bottom: 20px;
     }
     .oscar-tex {
         width: 95%;
         text-align: center;
         margin-left: 0px;
         padding-left: 0px;
+    }
+    .oscar-tex p:first-child {
+        margin-top: 50px;
+    }
+    .oscar-tex p:last-child {
+        margin-bottom: 50px;
     }
     /* ---------------------------------------------------Galeria-------------------------------------------------------------- */
     .galeria {
@@ -259,6 +272,7 @@ footer {
     header .navegacion {
         width: 50%;
         height: 100%;
+        left: -100%;
         margin: 0px;
         padding: 0px;
     }
@@ -276,7 +290,6 @@ footer {
         background-color: black;
         display: block;
         width: 100%;
-        position: fixed;
         text-decoration: none;
     }
     header .menu .bt-menu {
@@ -322,6 +335,9 @@ footer {
     .about h2 {
         margin-bottom: 10px;
         margin-top: -10px;
+    }
+    .oscar-tex p:first-child {
+        margin-top: 20px;
     }
     /* ---------------------------------------------Galeria---------------------------------------------------------- */
     .imagen-galeria {
