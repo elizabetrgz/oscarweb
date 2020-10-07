@@ -16,7 +16,7 @@
     display: none;
 }
 
-header .navegacion {
+header #navegacion {
     color: #ffffff;
     position: fixed;
     background-color: black;
@@ -25,14 +25,14 @@ header .navegacion {
     overflow: hidden;
 }
 
-header .navegacion a {
+header #navegacion a {
     display: inline-block;
     text-decoration: none;
     color: #ffffff;
     margin-right: 20px;
 }
 
-header .navegacion a:hover {
+header #navegacion a:hover {
     color: #02542C;
     text-decoration: underline;
 }
@@ -55,8 +55,8 @@ header {
     background: linear-gradient(to right, #2c774446, #5a3f3757), url("img/Posible\ portada.jpg");
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     width: 100%;
-    min-height: 600px;
-    height: 700px;
+    max-height: 900px;
+    min-height: 650px;
     background-position: center center;
     background-size: cover;
     background-attachment: fixed;
@@ -72,7 +72,6 @@ header .text {
 }
 
 header h1 {
-    margin-top: 40px;
     font-size: 50px;
     color: #ffffff;
 }
@@ -271,18 +270,18 @@ footer {
 /* ----------------------------------------------------Responsive 700px--------------------------------------------- */
 
 @media only screen and (max-width: 700px) {
-    header .navegacion {
+    header #navegacion {
         width: 50%;
-        height: 100%;
+        min-height: max-content;
         left: -100%;
         margin: 0px;
         padding: 0px;
     }
-    header .navegacion ul {
+    header #navegacion ul {
         float: none;
         padding: 10px;
     }
-    header .navegacion ul li {
+    header #navegacion ul li {
         display: block;
         float: none;
         font-size: 25px;
@@ -307,7 +306,7 @@ footer {
         float: right;
         font-size: 40px;
     }
-    header .navegacion p {
+    header #navegacion p {
         display: none;
     }
     .foto-clientes .clientes {
