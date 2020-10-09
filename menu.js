@@ -36,6 +36,8 @@ window.onscroll = function() {
 
     } else {
         document.getElementById('navegacion').style.left = '-100%';
+
     }
+    ubicacion == desplazamiento;
 
 }
