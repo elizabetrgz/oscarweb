@@ -10,7 +10,7 @@ function main() {
             });
             contador = 0;
         } else {
-            contador = 1;
+            contador = 0;
             $('#navegacion').animate({
                 left: '-100%'
             });

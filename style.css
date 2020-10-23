@@ -47,11 +47,11 @@
     }
     
     header {
-        background: #5A3F37, url("img/Posible\ portada.jpg");
+        background: #5A3F37, url("OscarImg/Posible\ portada.jpg");
         /* fallback for old browsers */
-        background: -webkit-linear-gradient(to right, #2C7744, #5A3F37), url("img/Posible\ portada.jpg");
+        background: -webkit-linear-gradient(to right, #2C7744, #5A3F37), url("OscarImg/Posible\ portada.jpg");
         /* Chrome 10-25, Safari 5.1-6 */
-        background: linear-gradient(to right, #2c774446, #5a3f3757), url("img/Posible\ portada.jpg");
+        background: linear-gradient(to right, #2c774446, #5a3f3757), url("OscarImg/Posible\ portada.jpg");
         /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
         width: 100%;
         max-height: 900px;
@@ -91,8 +91,8 @@
         color: black;
         font-size: 40px;
         text-align: center;
-        margin-bottom: 60px;
-        margin-top: 20px;
+        margin-bottom: 50px;
+        margin-top: 10px;
     }
     
     .sobre-nosotros {
@@ -126,6 +126,13 @@
     }
     /* --------------------------------Galeria-----------------------------------------------------------*/
     
+    #obras h2 {
+        padding-top: 20px;
+        margin-bottom: 5px;
+        text-align: center;
+        font-size: 45px;
+    }
+    
     .linea {
         background-color: #131111;
         height: 5px;
@@ -150,7 +157,7 @@
     .galeria img {
         width: 100%;
         vertical-align: top;
-        height: 300px;
+        height: 400px;
         object-fit: cover;
         transition: transform 0.5s;
         -webkit-transition: transform 0.5s;
@@ -206,8 +213,8 @@
     }
     
     .light-box img {
-        width: 80vw;
-        max-height: 95vh;
+        width: 60vw;
+        max-height: 90vh;
     }
     
     .light-box:target {
@@ -222,8 +229,8 @@
         position: absolute;
         top: 20px;
         right: 40px;
-        background-color: black;
-        color: #ffffff;
+        background-color: #9D220B;
+        color: black;
         text-decoration: none;
         width: 40px;
         height: 40px;
@@ -233,7 +240,8 @@
         -ms-border-radius: 50%;
         -o-border-radius: 50%;
         text-align: center;
-        line-height: 40px;
+        line-height: 32px;
+        font-size: 30px;
     }
     
     .next {
@@ -333,7 +341,7 @@
     @media only screen and (max-width: 700px) {
         header #navegacion {
             width: 50%;
-            min-height: max-content;
+            max-height: max-content;
             left: -100%;
             margin: 0px;
             padding: 0px;
