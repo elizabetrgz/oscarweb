@@ -32,7 +32,7 @@ let ubicacion = window.pageYOffset;
 window.onscroll = function() {
     let desplazamiento = window.pageYOffset;
     if (ubicacion >= desplazamiento) {
-        document.getElementById('navegacion').style.left = '0';
+        document.getElementById('navegacion').style.left = '-100%';
 
     } else {
         document.getElementById('navegacion').style.left = '-100%';
