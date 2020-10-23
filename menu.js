@@ -31,13 +31,8 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 let ubicacion = window.pageYOffset;
 window.onscroll = function() {
     let desplazamiento = window.pageYOffset;
-    if (ubicacion >= desplazamiento) {
-        document.getElementById('navegacion').style.left = '-100%';
-
-    } else {
+    if (ubicacion >= desplazamiento || ubicacion <= desplazamiento) {
         document.getElementById('navegacion').style.left = '-100%';
 
     }
-    ubicacion == desplazamiento;
-
 }
