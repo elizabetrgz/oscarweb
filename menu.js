@@ -2,7 +2,7 @@ $(document).ready(main);
 var contador = 1;
 
 function main() {
-    $('.menu').click(function(e) {
+    $('.menut').click(function(e) {
         e.preventDefault();
         if (contador == 1) {
             $('#navegacion').animate({
@@ -10,7 +10,7 @@ function main() {
             });
             contador = 0;
         } else {
-            contador = 0;
+            contador = 1;
             $('#navegacion').animate({
                 left: '-100%'
             });
